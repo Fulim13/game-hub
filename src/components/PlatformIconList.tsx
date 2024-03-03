@@ -16,7 +16,7 @@ import { Platform } from "../hooks/usePlatforms";
 interface Props {
   platforms: Platform[];
 }
-const PlatformIconList = ({ platforms }: Props) => {
+const PlatformIconList = ({ platforms = [] }: Props) => {
   // What is index signature?
   //  - An index signature is a way to define a type for an object where you don't know the names of the properties in advance, usually because they are dynamic like pc, playstation, etc.
   // [key: string] is a index signature and also a type of key in the object
