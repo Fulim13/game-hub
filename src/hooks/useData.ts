@@ -30,7 +30,7 @@ const useData = <T>(endpoint: string, requestConfig?: AxiosRequestConfig, deps?:
         setError(err.message);
         setLoading(false);
       });
-
+      
     () => controller.abort();
   }, deps ? [...deps] : []);
 
