@@ -15,7 +15,7 @@ export interface GameQuery {
   sortOrder: string;
   searchText: string;
 }
-
+// npm run build
 function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
   return (
