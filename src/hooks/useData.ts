@@ -17,12 +17,13 @@ const useData = <T>(endpoint: string, requestConfig?: AxiosRequestConfig, deps?:
 
     setLoading(true);
     apiClient
-      .get<FetchResponse<T>>(endpoint, {
+      // .get<FetchResponse<T>>(endpoint, {
+      .get(endpoint, {
         signal: controller.signal,
         ...requestConfig,
       })
       .then((res) => {
-        setData(res.data.results);
+        setData(res.data);
         setLoading(false);
       })
       .catch((err) => {
