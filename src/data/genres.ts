@@ -1,49 +1,49 @@
 export default [
-    // {
-    //   "id": 4,
-    //   "name": "Action",
-    //   "slug": "action",
-    //   "games_count": 178657,
-    //   "image_background": "https://media.rawg.io/media/games/b7d/b7d3f1715fa8381a4e780173a197a615.jpg",
-    //   "games": [
-    //     {
-    //       "id": 3498,
-    //       "slug": "grand-theft-auto-v",
-    //       "name": "Grand Theft Auto V",
-    //       "added": 20588
-    //     },
-    //     {
-    //       "id": 3328,
-    //       "slug": "the-witcher-3-wild-hunt",
-    //       "name": "The Witcher 3: Wild Hunt",
-    //       "added": 19866
-    //     },
-    //     {
-    //       "id": 5286,
-    //       "slug": "tomb-raider",
-    //       "name": "Tomb Raider (2013)",
-    //       "added": 16253
-    //     },
-    //     {
-    //       "id": 13536,
-    //       "slug": "portal",
-    //       "name": "Portal",
-    //       "added": 15944
-    //     },
-    //     {
-    //       "id": 12020,
-    //       "slug": "left-4-dead-2",
-    //       "name": "Left 4 Dead 2",
-    //       "added": 15814
-    //     },
-    //     {
-    //       "id": 5679,
-    //       "slug": "the-elder-scrolls-v-skyrim",
-    //       "name": "The Elder Scrolls V: Skyrim",
-    //       "added": 15498
-    //     }
-    //   ]
-    // },
+    {
+      "id": 4,
+      "name": "Action",
+      "slug": "action",
+      "games_count": 178657,
+      "image_background": "https://media.rawg.io/media/games/b7d/b7d3f1715fa8381a4e780173a197a615.jpg",
+      "games": [
+        {
+          "id": 3498,
+          "slug": "grand-theft-auto-v",
+          "name": "Grand Theft Auto V",
+          "added": 20588
+        },
+        {
+          "id": 3328,
+          "slug": "the-witcher-3-wild-hunt",
+          "name": "The Witcher 3: Wild Hunt",
+          "added": 19866
+        },
+        {
+          "id": 5286,
+          "slug": "tomb-raider",
+          "name": "Tomb Raider (2013)",
+          "added": 16253
+        },
+        {
+          "id": 13536,
+          "slug": "portal",
+          "name": "Portal",
+          "added": 15944
+        },
+        {
+          "id": 12020,
+          "slug": "left-4-dead-2",
+          "name": "Left 4 Dead 2",
+          "added": 15814
+        },
+        {
+          "id": 5679,
+          "slug": "the-elder-scrolls-v-skyrim",
+          "name": "The Elder Scrolls V: Skyrim",
+          "added": 15498
+        }
+      ]
+    },
     {
       "id": 51,
       "name": "Indie",
