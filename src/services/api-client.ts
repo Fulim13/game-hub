@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosRequestConfig } from "axios";
 
 // const apiUrl = import.meta.env.VITE_API_URL as string;
 // console.log(apiUrl);
@@ -8,7 +8,7 @@ export interface FetchResponse<T> {
   results: T[];
 }
 
-export default axios.create({
+const axiosInstance = axios.create({
   // check dev server or production server, based on that change url
   baseURL: import.meta.env.DEV
     ? "http://localhost:3001/api"
@@ -17,3 +17,19 @@ export default axios.create({
   //   key: "<API-Key>",
   // },
 });
+
+class APIClient<T> {
+  endpoint: string;
+
+  constructor(endpoint: string) {
+    this.endpoint = endpoint;
+  }
+
+  getAll = (config: AxiosRequestConfig) => {
+    return axiosInstance
+      .get<FetchResponse<T>>(this.endpoint, config)
+      .then((res) => res.data);
+  };
+}
+
+export default APIClient;
