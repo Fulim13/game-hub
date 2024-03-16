@@ -3,6 +3,11 @@ import axios from "axios";
 // const apiUrl = import.meta.env.VITE_API_URL as string;
 // console.log(apiUrl);
 
+export interface FetchResponse<T> {
+  count: number;
+  results: T[];
+}
+
 export default axios.create({
   // check dev server or production server, based on that change url
   baseURL: import.meta.env.DEV
